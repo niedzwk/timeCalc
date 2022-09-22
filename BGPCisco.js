@@ -26,10 +26,10 @@ const formatTimeBGP = (startTime) => {
   let minutes = Math.floor((startTime - 3600 * hours) / 60);
   let seconds = startTime - 3600 * hours - minutes * 60;
   let date = new Date();
-  //   let day = date.getDate();
-  //   let month = date.getMonth() + 1;
-  let day = 1;
-  let month = 3;
+  let day = date.getDate();
+  let month = date.getMonth() + 1;
+  //   let day = 1;
+  //   let month = 3;
   let year = date.getFullYear();
   oldDay = backDays - day;
   day -= backDays;
