@@ -28,7 +28,7 @@ const actualDate = (workingTime) => {
   if (realStartTimeInSeconds >= 86400) {
     realStartTimeInSeconds = realStartTimeInSeconds - 86400;
   }
-  console.log("fdfnsdjf" + realStartTimeInSeconds);
+  // console.log("fdfnsdjf" + realStartTimeInSeconds);
   return realStartTimeInSeconds;
 };
 
@@ -74,7 +74,7 @@ const calc = () => {
   let workingTime = routerTimeInSeconds - startTimeInSeconds;
   let realStartTimeInSeconds = actualDate(workingTime);
   let resultTime = formatTime(realStartTimeInSeconds);
-  console.log(workingTime);
+  // console.log(workingTime);
   result.textContent = resultTime;
   result.textContent.focus();
   result.textContent.select();

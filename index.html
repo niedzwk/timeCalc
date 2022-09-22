@@ -4,16 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Kalkulator czasu pracy</title>
   </head>
   <body>
-    <p></p>Podaj godzine startu z logów</p>
-    <input type="text" class="startDate" />
-    <p>Podaj godzine na routerze</p>
-    <input type="text" class="routerTime" step="2" />
-    <button class="btnCalc">Licz</button>
-    <h2>Urządzenie działa od godziny: </h2>
-    <h1 class="result"></h1>
-    <script src="main.js"></script>
+    <div class="logsTime">
+      <p>Podaj godzine startu z logów</p>
+      <input type="text" class="startDate" placeholder="format hh:mm:ss" />
+      <p>Podaj godzine na routerze</p>
+      <input
+        type="text"
+        class="routerTime"
+        step="2"
+        placeholder="format hh:mm:ss"
+      />
+      <button class="btnCalc">Licz</button>
+      <h2>Urządzenie działa od godziny:</h2>
+      <h1 class="result"></h1>
+      <script src="main.js"></script>
+    </div>
+    <div class="BGPTime">
+      <p>Podaj czas trwania sesji BGP <b>CISCO</b></p>
+      <input type="text" class="startTime" placeholder="format hh:mm:ss" />
+      <button class="btnCalcBGP">Licz</button>
+      <h2>Działa od godziny:</h2>
+      <textarea class="bgpResultH1"></textarea>
+      <script src="BGPCisco.js"></script>
+    </div>
   </body>
 </html>

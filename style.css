@@ -1,0 +1,30 @@
+.logsTime {
+  width: calc(50% - 20px);
+  background-color: orange;
+  float: left;
+  padding: 10px;
+}
+
+.BGPTime {
+  width: calc(50% - 20px);
+  float: left;
+  padding: 10px;
+}
+
+.bgpResultH1 {
+  font-weight: bold;
+  font-size: large;
+  border: none;
+  resize: none;
+  background-color: white;
+  text-align: center;
+}
+
+.bgpResultH1:focus {
+  background-color: aqua;
+  font-weight: bold;
+  font-size: large;
+  border: none;
+  text-align: center;
+  resize: none;
+}
