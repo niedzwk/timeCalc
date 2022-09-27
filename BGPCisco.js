@@ -76,33 +76,6 @@ const formatTimeBGP = (startTime) => {
   );
 };
 
-const backMounth = (day, month, year) => {
-  // let day= day
-  let days;
-  if (
-    (month = 2) ||
-    (month = 4) ||
-    (month = 6) ||
-    (month = 8) ||
-    (month = 9) ||
-    (month = 11) ||
-    (month = 1)
-  )
-    days = 1;
-  if (day < 1 && (days = 1)) {
-    day = 31;
-    //   } else if ((month = 3)) {
-    //     day = 28;
-  } else day = 30;
-
-  month -= 1;
-  if ((month = 0)) {
-    month = 12;
-    year = -1;
-  }
-  console.log(day + "-" + month);
-};
-
 const bgpResult = () => {
   let actualDateInSec = actualDateBGP();
   let bgpTimeInSec = bgpTimeToSec();
@@ -123,6 +96,8 @@ const bgpResult = () => {
   } catch (err) {
     console.log("Oops, unable to copy");
   }
+  actualDateBGP();
+  bgpTimeToSec();
 };
 
 buttonBGP.addEventListener("click", bgpResult);

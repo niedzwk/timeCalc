@@ -3,12 +3,21 @@
   background-color: orange;
   float: left;
   padding: 10px;
+  text-align: center;
+  font-family: monospace;
+  font-size: larger;
+  height: 300px;
 }
 
 .BGPTime {
   width: calc(50% - 20px);
-  float: left;
+  float: right;
   padding: 10px;
+  text-align: center;
+  font-family: monospace;
+  font-size: larger;
+  height: 300px;
+  /* background-color: aquamarine; */
 }
 
 .bgpResultH1 {
@@ -21,10 +30,27 @@
 }
 
 .bgpResultH1:focus {
-  background-color: aqua;
+  /* background-color: aqua; */
   font-weight: bold;
   font-size: large;
   border: none;
   text-align: center;
   resize: none;
+}
+
+body {
+  background-color: orange;
+  font-size: larger;
+  font-family: monospace;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+div.result {
+  float: left;
+  width: calc(100% - 30px);
+  text-align: center;
 }
